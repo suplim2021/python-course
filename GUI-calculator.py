@@ -38,7 +38,7 @@ def Cal():
         quan = float(v2_quantity.get())
         f2 = quan
         calc = f1 * f2
-        messagebox.showinfo('ผลลัพธ์','มีพื้นที่ {} เมตร'.format(calc))
+        messagebox.showinfo('ผลลัพธ์','มีพื้นที่ {} ตารางเมตร'.format(calc))
         E1.focus()
     except:
         messagebox.showinfo('ผิดพลาด','กรุณากรอกเฉพาะตัวเลขเท่านั้น')
