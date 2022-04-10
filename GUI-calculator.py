@@ -35,6 +35,8 @@ def Cal():
         length = float(length_v.get())
         calc = width * length # กว้าง * ยาว
         messagebox.showinfo('ผลลัพธ์','มีพื้นที่ {} ตารางเมตร'.format(calc))
+        width_v.set('') # ล้างค่าช่อง width_v
+        length_v.set('') # ล้างค่าช่อง length_v
         E1.focus() # โฟกัสที่ช่องสำหรับกรอกข้อความช่องแรก
     except: # ผิดพลาด
         messagebox.showinfo('ผิดพลาด','กรุณากรอกเฉพาะตัวเลขเท่านั้น')
